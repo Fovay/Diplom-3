@@ -1,0 +1,22 @@
+from selenium.webdriver.common.by import By
+
+class MainPageLocators:
+    PROFILE_BUTTON = (By.XPATH, ".//p[text()='Личный Кабинет']")
+    LOGIN_PROFILE_BUTTON = (By.XPATH, ".//button[text()='Войти в аккаунт']")
+    CONSTRUCTOR_BUTTON = (By.XPATH, "//p[text()='Конструктор']/parent::a")
+    ORDERS_LIST_BUTTON = (By.XPATH, "//p[text()='Лента Заказов']/parent::a")
+    MAIN_LIST_TITLE = (By.XPATH, "//h1[text()='Соберите бургер']")
+    BUN_INGREDIENT = (By.XPATH, "//a[.//img[@alt='Флюоресцентная булка R2-D3']]")
+    INGREDIENT_COUNTER = (By.XPATH, "//a[.//img[@alt='Флюоресцентная булка R2-D3']]//p[contains(@class, 'counter_counter__num')]")
+    BUN_TOP_IN_ORDER = (By.XPATH, "//div[contains(@class, 'constructor-element_pos_top')]//span[contains(@class, 'constructor-element__text')][contains(text(), 'Флюоресцентная булка R2-D3')]")
+    INGREDIENT_DETAILS_POPUP = (By.XPATH, "//h2[text()='Детали ингредиента']")
+    CROSS_BUTTON = (By.XPATH, "//h2[text()='Детали ингредиента']/ancestor::div[contains(@class, 'Modal_modal')]//button[contains(@class, 'Modal_modal__close')]")
+    INGREDIENT_MODAL = (By.XPATH, "//h2[text()='Детали ингредиента']/ancestor::div[contains(@class, 'Modal_modal')]")
+    ORDER_BASKET = (By.XPATH, "//section[contains(@class, 'BurgerConstructor_basket')]")
+    CREATE_ORDER_BUTTON = (By.XPATH, "//button[contains(., 'Оформить') and not(contains(., 'Войти'))]")
+    ORDER_IDENTIFICATE = (By.XPATH, "//p[text()='идентификатор заказа']")
+    ORDER_ID = (By.XPATH, "//h2[contains(@class, 'Modal_modal__title_shadow')]")
+    ORDER_MODAL = (By.XPATH, "//p[text()='идентификатор заказа']/ancestor::div[contains(@class, 'Modal_modal')]")
+    CLOSE_MODAL_ORDER = (By.XPATH, "//p[text()='идентификатор заказа']/ancestor::div[contains(@class, 'Modal_modal')]//button[contains(@class, 'Modal_modal__close')]")
+    ORDER_STATUS_TEXT = (By.XPATH, "//p[text()='Ваш заказ начали готовить']")
+    ORDER_ID_PLACEHOLDER = (By.XPATH, "//h2[contains(@class, 'Modal_modal__title_shadow')][text()='9999']")
